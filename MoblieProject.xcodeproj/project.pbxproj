@@ -267,9 +267,17 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoblieProject/Pods-MoblieProject-resources.sh",
+				"${PODS_ROOT}/guoxin-base/GXBase/NetWork/RSA/private_key.p12",
+				"${PODS_ROOT}/guoxin-base/GXBase/NetWork/RSA/public_key.der",
+				"${PODS_ROOT}/guoxin-base/GXBase/UI/gxb_nav_back@3x.png",
+				"${PODS_ROOT}/guoxin-base/GXBase/UI/EmptyAndNetError.bundle",
+				"${PODS_ROOT}/guoxin-base/GXBase/UI/ViewControllerLoadingTips.bundle",
+				"${PODS_ROOT}/guoxin-base/GXBase/UI/GXNetTipController.xib",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

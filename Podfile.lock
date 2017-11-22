@@ -14,13 +14,67 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.1.0):
+    - CocoaLumberjack/Default (= 3.1.0)
+    - CocoaLumberjack/Extensions (= 3.1.0)
+  - CocoaLumberjack/Default (3.1.0)
+  - CocoaLumberjack/Extensions (3.1.0):
+    - CocoaLumberjack/Default
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - guoxin-base (0.1.40):
+    - guoxin-base/Category (= 0.1.40)
+    - guoxin-base/Color (= 0.1.40)
+    - guoxin-base/Dao (= 0.1.40)
+    - guoxin-base/Font (= 0.1.40)
+    - guoxin-base/Log (= 0.1.40)
+    - guoxin-base/Macros (= 0.1.40)
+    - guoxin-base/Model (= 0.1.40)
+    - guoxin-base/NetWork (= 0.1.40)
+    - guoxin-base/UI (= 0.1.40)
+  - guoxin-base/Category (0.1.40)
+  - guoxin-base/Color (0.1.40)
+  - guoxin-base/Dao (0.1.40):
+    - FMDB (~> 2.6.2)
+  - guoxin-base/Font (0.1.40)
+  - guoxin-base/Log (0.1.40):
+    - CocoaLumberjack (~> 3.1.0)
+  - guoxin-base/Macros (0.1.40)
+  - guoxin-base/Model (0.1.40)
+  - guoxin-base/NetWork (0.1.40):
+    - AFNetworking (~> 3.1.0)
+    - guoxin-base/Category
+    - guoxin-base/Log
+    - guoxin-base/Model
+    - MJExtension (~> 3.0.0)
+    - YYCache (~> 1.0.4)
+  - guoxin-base/UI (0.1.40)
+  - MJExtension (3.0.13)
+  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - guoxin-base (from `http://gitlab.guoxin.bj/ios/guoxin-base.git`, tag `0.1.40`)
+
+EXTERNAL SOURCES:
+  guoxin-base:
+    :git: http://gitlab.guoxin.bj/ios/guoxin-base.git
+    :tag: 0.1.40
+
+CHECKOUT OPTIONS:
+  guoxin-base:
+    :git: http://gitlab.guoxin.bj/ios/guoxin-base.git
+    :tag: 0.1.40
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  guoxin-base: e429fc3520d68f4a8ff895c64d76914505fc46f9
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: fa98f436ac4a7b4fbcf880e84ceeebab0c7071bf
+PODFILE CHECKSUM: 5c046d37e5ad308c43382328943704a667cde364
 
 COCOAPODS: 1.3.1

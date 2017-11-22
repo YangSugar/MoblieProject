@@ -83,6 +83,22 @@ EOM
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/NetWork/RSA/private_key.p12"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/NetWork/RSA/public_key.der"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/UI/gxb_nav_back@3x.png"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/UI/EmptyAndNetError.bundle"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/UI/ViewControllerLoadingTips.bundle"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/UI/GXNetTipController.xib"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/NetWork/RSA/private_key.p12"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/NetWork/RSA/public_key.der"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/UI/gxb_nav_back@3x.png"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/UI/EmptyAndNetError.bundle"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/UI/ViewControllerLoadingTips.bundle"
+  install_resource "${PODS_ROOT}/guoxin-base/GXBase/UI/GXNetTipController.xib"
+fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

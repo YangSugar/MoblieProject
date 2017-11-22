@@ -1,0 +1,102 @@
+{
+  "name": "guoxin-base",
+  "version": "0.1.40",
+  "summary": "guoxin-base for iOS project.",
+  "homepage": "http://gitlab.guoxin.bj/ios/guoxin-base",
+  "license": "MIT",
+  "authors": {
+    "VisionBao": "Vision8888888@gmail.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "http://gitlab.guoxin.bj/ios/guoxin-base.git",
+    "tag": "0.1.40"
+  },
+  "source_files": "GXBase/guoxin-base.h",
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": "GXBase/Category/**/*",
+      "public_header_files": "GXBase/Category/**/*.h"
+    },
+    {
+      "name": "Color",
+      "source_files": "GXBase/Color/**/*",
+      "public_header_files": "GXBase/Color/**/*.h"
+    },
+    {
+      "name": "Font",
+      "source_files": "GXBase/Font/**/*",
+      "public_header_files": "GXBase/Font/**/*.h"
+    },
+    {
+      "name": "Log",
+      "source_files": "GXBase/Log/**/*",
+      "public_header_files": "GXBase/Log/**/*.h",
+      "dependencies": {
+        "CocoaLumberjack": [
+          "~> 3.1.0"
+        ]
+      }
+    },
+    {
+      "name": "Macros",
+      "source_files": "GXBase/Macros/**/*",
+      "public_header_files": "GXBase/Macros/**/*.h"
+    },
+    {
+      "name": "Model",
+      "source_files": "GXBase/Model/**/*",
+      "public_header_files": "GXBase/Model/**/*.h"
+    },
+    {
+      "name": "NetWork",
+      "source_files": "GXBase/NetWork/**/*",
+      "public_header_files": "GXBase/NetWork/**/*.h",
+      "dependencies": {
+        "guoxin-base/Category": [
+
+        ],
+        "guoxin-base/Log": [
+
+        ],
+        "guoxin-base/Model": [
+
+        ],
+        "MJExtension": [
+          "~> 3.0.0"
+        ],
+        "AFNetworking": [
+          "~> 3.1.0"
+        ],
+        "YYCache": [
+          "~> 1.0.4"
+        ]
+      },
+      "resources": "GXBase/NetWork/**/*.{p12,der}"
+    },
+    {
+      "name": "Dao",
+      "source_files": "GXBase/Dao/**/*",
+      "public_header_files": "GXBase/Dao/**/*.h",
+      "dependencies": {
+        "FMDB": [
+          "~> 2.6.2"
+        ]
+      },
+      "libraries": "iconv"
+    },
+    {
+      "name": "UI",
+      "source_files": "GXBase/UI/**/*.{h,m}",
+      "public_header_files": "GXBase/UI/**/*.h",
+      "resources": [
+        "GXBase/UI/gxb_nav_back@3x.png",
+        "GXBase/UI/**/*.bundle",
+        "GXBase/UI/**/*.xib"
+      ]
+    }
+  ]
+}
