@@ -175,7 +175,7 @@ forHTTPHeaderField:(NSString *)field;
 
  @param field The HTTP header to retrieve the default value for
 
- @return The value set as default for the specified header, or `nil`
+ @return The value set as default fo    r the specified header, or `nil`
  */
 - (nullable NSString *)valueForHTTPHeaderField:(NSString *)field;
 
