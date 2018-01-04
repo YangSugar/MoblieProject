@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "NSArray+Swizzle.h"
+#import <objc/runtime.h>
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
