@@ -25,6 +25,8 @@
 		B65BB6ED1FC2B8470074DCE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65BB6EB1FC2B8470074DCE0 /* LaunchScreen.storyboard */; };
 		B65BB6F01FC2B8470074DCE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65BB6EF1FC2B8470074DCE0 /* main.m */; };
 		B65BB6FA1FC2B8480074DCE0 /* MoblieProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B65BB6F91FC2B8480074DCE0 /* MoblieProjectUITests.m */; };
+		B680E7311FFE144900A22643 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B680E7301FFE144900A22643 /* MVVMViewController.m */; };
+		B680E7381FFE162800A22643 /* FTViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = B680E7371FFE162800A22643 /* FTViewControllerIntercepter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,11 @@
 		B65BB6F51FC2B8480074DCE0 /* MoblieProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoblieProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65BB6F91FC2B8480074DCE0 /* MoblieProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoblieProjectUITests.m; sourceTree = "<group>"; };
 		B65BB6FB1FC2B8480074DCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B680E72F1FFE144900A22643 /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		B680E7301FFE144900A22643 /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		B680E7361FFE162800A22643 /* FTViewControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTViewControllerIntercepter.h; sourceTree = "<group>"; };
+		B680E7371FFE162800A22643 /* FTViewControllerIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTViewControllerIntercepter.m; sourceTree = "<group>"; };
+		B693F06B200314C4005C48B7 /* FTViewControllerIntercepterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTViewControllerIntercepterProtocol.h; sourceTree = "<group>"; };
 		CE69124A671C194CC3ABA21C /* libPods-MoblieProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoblieProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,6 +170,7 @@
 		B65BB6DF1FC2B8470074DCE0 /* MoblieProject */ = {
 			isa = PBXGroup;
 			children = (
+				B680E72E1FFE143D00A22643 /* MVVM */,
 				B6115F9A1FF5E73F004722CB /* swizzle */,
 				B65BB6E01FC2B8470074DCE0 /* AppDelegate.h */,
 				B65BB6E11FC2B8470074DCE0 /* AppDelegate.m */,
@@ -185,6 +193,26 @@
 				B65BB6FB1FC2B8480074DCE0 /* Info.plist */,
 			);
 			path = MoblieProjectUITests;
+			sourceTree = "<group>";
+		};
+		B680E72E1FFE143D00A22643 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				B680E7321FFE155300A22643 /* NoBase */,
+				B680E72F1FFE144900A22643 /* MVVMViewController.h */,
+				B680E7301FFE144900A22643 /* MVVMViewController.m */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		B680E7321FFE155300A22643 /* NoBase */ = {
+			isa = PBXGroup;
+			children = (
+				B693F06B200314C4005C48B7 /* FTViewControllerIntercepterProtocol.h */,
+				B680E7361FFE162800A22643 /* FTViewControllerIntercepter.h */,
+				B680E7371FFE162800A22643 /* FTViewControllerIntercepter.m */,
+			);
+			path = NoBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +355,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoblieProject/Pods-MoblieProject-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/guoxin-base/GXBase/NetWork/RSA/private_key.p12",
 				"${PODS_ROOT}/guoxin-base/GXBase/NetWork/RSA/public_key.der",
 				"${PODS_ROOT}/guoxin-base/GXBase/UI/gxb_nav_back@3x.png",
@@ -355,6 +384,8 @@
 				B65BB6E51FC2B8470074DCE0 /* ViewController.m in Sources */,
 				B60A6DDC1FFCAF7000BF87EC /* MainClass.m in Sources */,
 				B6115FA61FFB88FE004722CB /* UIViewController+track.m in Sources */,
+				B680E7311FFE144900A22643 /* MVVMViewController.m in Sources */,
+				B680E7381FFE162800A22643 /* FTViewControllerIntercepter.m in Sources */,
 				B65BB6F01FC2B8470074DCE0 /* main.m in Sources */,
 				B60A6DEB1FFCC02000BF87EC /* HookViewController.m in Sources */,
 				B60A6DEE1FFCC03100BF87EC /* HookViewController+Hook.m in Sources */,

@@ -181,17 +181,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 - (void)class_addMethod:(Class)class selector:(SEL)selector imp:(IMP)imp types:(const char *)types {
     if (class_addMethod(class,selector,class_getMethodImplementation(class, selector),types)) {
         NSLog(@"%sadd method success",__func__);

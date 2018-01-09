@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "MVVMViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ViewController *vc = [[ViewController alloc] init];
+    MVVMViewController *vc = [[MVVMViewController alloc] init];
+    
+    
     UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:vc];
+    na.navigationBar.translucent = NO;
+    
+    
     self.window.rootViewController = na;
     [self.window makeKeyAndVisible];
     

@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
   - CocoaLumberjack (3.1.0):
     - CocoaLumberjack/Default (= 3.1.0)
     - CocoaLumberjack/Extensions (= 3.1.0)
@@ -50,14 +51,24 @@ PODS:
     - MJExtension (~> 3.0.0)
     - YYCache (~> 1.0.4)
   - guoxin-base/UI (0.1.40)
-  - Masonry (1.1.0)
+  - JLRoutes (2.0.5)
+  - Masonry (1.0.2)
   - MJExtension (3.0.13)
+  - ReactiveObjC (3.0.0)
+  - SVProgressHUD (2.2.2)
+  - YTKNetwork (2.0.4):
+    - AFNetworking (~> 3.0)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Aspects (~> 1.4.1)
   - guoxin-base (from `http://gitlab.guoxin.bj/ios/guoxin-base.git`, tag `0.1.40`)
-  - Masonry
+  - JLRoutes (~> 2.0.5)
+  - Masonry (~> 1.0.2)
+  - ReactiveObjC (~> 3.0.0)
+  - SVProgressHUD (~> 2.2.2)
+  - YTKNetwork (~> 2.0.3)
 
 EXTERNAL SOURCES:
   guoxin-base:
@@ -71,13 +82,18 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   guoxin-base: e429fc3520d68f4a8ff895c64d76914505fc46f9
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  JLRoutes: 2a5ee61d739b51a98c9d8112bee5149a19de8854
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 4f073298864f971505f417e9d1f9e2fb5f0f4df4
+PODFILE CHECKSUM: facc47980500c07277cb5e4a5d21709a84ea09f5
 
 COCOAPODS: 1.3.1
