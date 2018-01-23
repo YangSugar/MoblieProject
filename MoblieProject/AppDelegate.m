@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "MVVMViewController.h"
+#import "FTTableViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface AppDelegate ()
 
@@ -19,8 +21,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    MVVMViewController *vc = [[MVVMViewController alloc] init];
+    FTTableViewController *vc = [[FTTableViewController alloc] init];
     
     
     UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:vc];
@@ -32,6 +35,9 @@
     
     return YES;
 }
+
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

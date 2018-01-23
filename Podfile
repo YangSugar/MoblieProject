@@ -18,4 +18,12 @@ target :'MoblieProject' do
     pod 'SVProgressHUD', '~> 2.2.2'
     # 自动布局
     pod 'Masonry', '~> 1.0.2'
+    
+    
+    
+    
+    pod 'SDWebImage','~> 3.0'
+    pod 'YYText'
+    pod 'SVPullToRefresh'
+    
 end
